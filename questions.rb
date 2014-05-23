@@ -35,7 +35,7 @@ end
 # make sure you don't have the same pairing twice, 
 def every_possible_pairing_of_students(array)
 	n = ['Bob', 'Dave', 'Clive']
-	sorted = n.zip(n)
+	n.combination(2)
 end
 
 

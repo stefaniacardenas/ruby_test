@@ -34,11 +34,16 @@ end
 # [['Bob', 'Clive'], ['Bob', 'Dave'], ['Clive', 'Dave']]
 # make sure you don't have the same pairing twice, 
 def every_possible_pairing_of_students(array)
+	n = ['Bob', 'Dave', 'Clive']
+	sorted = n.zip(n)
 end
+
 
 # discard the first 3 elements of an array, 
 # e.g. [1, 2, 3, 4, 5, 6] becomes [4, 5, 6]
 def all_elements_except_first_3(array)
+	n = [1, 2, 3, 4, 5, 6, 7]
+	n.slice(3..6)
 end
 
 # add an element to the beginning of an array

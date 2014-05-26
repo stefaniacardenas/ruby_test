@@ -91,17 +91,17 @@ describe 'the Friday test :)' do
     expect(n).to eq 'different'
   end
 
-  fit 'total_of_array' do
+  it 'total_of_array' do
     n = total_of_array [1, 3, 5, 6, 2, 8]
     expect(n).to eq 25
   end
 
-  specify 'double_array' do
+  it 'double_array' do
     n = double_array [1, 2, 3]
     expect(n).to eq [1, 2, 3, 1, 2, 3]
   end
 
-  specify 'turn_symbol_into_string' do
+  it 'turn_symbol_into_string' do
     n = turn_symbol_into_string :foobar
     expect(n).to eq 'foobar'
   end

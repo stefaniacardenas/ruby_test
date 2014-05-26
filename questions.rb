@@ -137,6 +137,9 @@ end
 # get the average from an array, rounded to the nearest integer
 # so [10, 15, 25] should return 17
 def average_of_array(array)
+	n = [10, 15, 25]
+	average = n.inject(0.0) { | total, num | total + num } / n.count
+	average.round
 end
 
 # get all the elements in an array, up until the first element

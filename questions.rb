@@ -117,6 +117,8 @@ end
 # add up all the numbers in an array, so [1, 3, 5, 6]
 # returns 15
 def total_of_array(array)
+	n = [1, 3, 5, 6, 2, 8]
+	n.inject { | memo, num | memo + num }
 end
 
 # turn an array into itself repeated twice. So [1, 2, 3]

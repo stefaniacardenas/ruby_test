@@ -102,13 +102,16 @@ end
 
 # return the shortest word in an array
 def shortest_word_in_array(array)
-n = %w(here is a bunch of words of different lengths)
-sorted = n.sort_by! { | word | word.length }
-sorted.first
+	n = %w(here is a bunch of words of different lengths)
+	sorted = n.sort_by! { | word | word.length }
+	sorted.first
 end
 
 # return the longest word in an array
 def longest_word_in_array(array)
+	n = %w(here is a bunch of words of different lengths)
+	sorted = n.sort_by! { | word | word.length }
+	sorted.last
 end
 
 # add up all the numbers in an array, so [1, 3, 5, 6]

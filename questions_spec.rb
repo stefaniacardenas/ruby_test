@@ -126,7 +126,7 @@ describe 'the Friday test :)' do
     expect(n).to eq ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
   end
 
-  fit 'swap_keys_and_values_in_a_hash' do
+  it 'swap_keys_and_values_in_a_hash' do
     n = swap_keys_and_values_in_a_hash({'a' => 'b', 'c' => 'd'})
     expect(n).to eq({'b' => 'a', 'd' => 'c'})
   end
@@ -136,17 +136,17 @@ describe 'the Friday test :)' do
     expect(n).to eq 6
   end
 
-  specify 'remove_capital_letters_from_string' do
+  it 'remove_capital_letters_from_string' do
     n = remove_capital_letters_from_string 'Hello JohnDoe'
     expect(n).to eq 'ello ohnoe'
   end
 
-  fit 'round_up_number' do
+  it 'round_up_number' do
     n = round_up_number 3.142
     expect(n).to eq 4
   end
 
-  specify 'round_down_number' do
+  fit 'round_down_number' do
     n = round_down_number 4.9
     expect(n).to eq 4
   end

@@ -173,7 +173,7 @@ end
 # {'b' => 'a', 'd' => 'c'}
 def swap_keys_and_values_in_a_hash(hash)
 	n = {'a' => 'b', 'c' => 'd'}
-	n.map { |x , y| {y => x }}
+	n.invert
 end
 
 # in a hash where the keys and values are all numbers
@@ -193,7 +193,8 @@ end
 # round up a float up and convert it to an Integer,
 # so 3.214 becomes 4
 def round_up_number(float)
-
+	n = 3.142
+	n.ceil
 end
 
 # round down a float up and convert it to an Integer,

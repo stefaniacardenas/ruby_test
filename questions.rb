@@ -224,6 +224,18 @@ end
 # 'the lion the witch and the wardrobe' becomes
 # 'The Lion the Witch and the Wardrobe'
 def titleize_a_string(string)
+	# split() turns the string into an array of word. Take the first element of the array and capitalize it
+	first_word = string.split.first.capitalize
+	# take the string, split it into an array and drop the second element of the first element of the array 
+	words_to_titleize = string.split.drop(1)
+	rejected_words = ['is','a','the','and']
+	words_to_titleize.inject(first_word) do |acc, word| 
+		if rejected_words.include?(word)
+			acc + ' ' + word
+			else
+				acc + ' ' + word.capitalize
+			end
+		end
 end
 
 # return true if a string contains any special characters

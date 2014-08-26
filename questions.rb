@@ -26,7 +26,7 @@ end
 # ['dog', 'monkey'] becomes ['god', 'yeknom']
 def reverse_every_element_in_array(array)
 	n = ['dog', 'monkey', 'elephant']
-	n. each { |animal| animal.reverse! }
+	n.each { |animal| animal.reverse! }
 end
 
 # given an array of student names, like ['Bob', 'Dave', 'Clive']
@@ -188,6 +188,8 @@ end
 # take out all the capital letters from a string
 # so 'Hello JohnDoe' becomes 'ello ohnoe'
 def remove_capital_letters_from_string(string)
+	n = string.split
+	string.chars.delete_if {|char| char.match (/[A-Z]/) }.join
 end
 
 # round up a float up and convert it to an Integer,

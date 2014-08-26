@@ -207,6 +207,8 @@ end
 # take a date and format it like dd/mm/yyyy, so Halloween 2013
 # becomes 31/10/2013
 def format_date_nicely(date)
+	n = Time.new(2013, 10, 31)
+	n.strftime("%d/%m/%Y")
 end
 
 # get the domain name *without* the .com part, from an email address

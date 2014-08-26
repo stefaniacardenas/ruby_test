@@ -146,12 +146,12 @@ describe 'the Friday test :)' do
     expect(n).to eq 4
   end
 
-  fit 'round_down_number' do
+  it 'round_down_number' do
     n = round_down_number 4.9
     expect(n).to eq 4
   end
 
-  specify 'format_date_nicely' do
+  fit 'format_date_nicely' do
     n = format_date_nicely Time.new(2013, 10, 31)
     expect(n).to eq '31/10/2013'
   end
@@ -174,7 +174,7 @@ describe 'the Friday test :)' do
     expect(b).to be_true
   end
 
-  fit 'get_upper_limit_of' do
+  it 'get_upper_limit_of' do
     n = get_upper_limit_of 1..20
     expect(n).to eq 20
   end

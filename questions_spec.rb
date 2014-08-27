@@ -183,8 +183,8 @@ describe 'the Friday test :)' do
     a = is_a_3_dot_range? 1..20
     b = is_a_3_dot_range? 1...20
 
-    expect(a).to be_false
-    expect(b).to be_true
+    expect(a).to be_falsey
+    expect(b).to be_truthy
   end
 
   it 'square_root_of' do
@@ -194,12 +194,12 @@ describe 'the Friday test :)' do
     expect(b).to eq 1.7320508075688772
   end
 
-  fit 'word_count_a_file' do
+  it 'word_count_a_file' do
     n = word_count_a_file 'lorem.txt'
     expect(n).to eq 70
   end
 
-  specify 'call_method_from_string' do
+  fit 'call_method_from_string' do
     expect { call_method_from_string('foobar') }.to raise_error(NameError)
   end
 
